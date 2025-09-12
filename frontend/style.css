@@ -1,0 +1,163 @@
+.profile-card {
+    background: #f8f5ed;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #e2d8c2;
+    padding: 2.5rem 2rem;
+    max-width: 420px;
+    margin: 2rem auto;
+}
+#profile-form label {
+    font-weight: 600;
+    color: #a88b4a;
+}
+#profile-form input[type="text"],
+#profile-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2d8c2;
+    background: #fff8e1;
+}
+#profile-form button {
+    background: #a88b4a;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#profile-status {
+    margin-left: 1rem;
+    color: #2a5ca4;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(120deg, #f5ecd7 0%, #f3e9d2 100%);
+    min-height: 100vh;
+}
+nav {
+    background: #e9dec7;
+    color: #6d4c1b;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(180, 140, 60, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #b89b5e;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 1.2rem;
+}
+nav ul li a {
+    color: #6d4c1b;
+    text-decoration: none;
+    font-size: 1.08rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+nav ul li a:hover, nav ul li a.active {
+    background: #f5ecd7;
+    color: #b89b5e;
+}
+main {
+    max-width: 950px;
+    margin: 2.5rem auto;
+    background: #fff8ee;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(180, 140, 60, 0.10);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    min-height: 600px;
+}
+.content-section {
+    display: none;
+}
+.content-section.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: none; }
+}
+h2 {
+    color: #1976d2;
+    margin-top: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+form, .card {
+    background: #f5ecd7;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(180, 140, 60, 0.07);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+input, select, button {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #c2b280;
+    margin: 0.3rem 0 1rem 0;
+    outline: none;
+    transition: border 0.2s;
+    background: #fff8ee;
+}
+input:focus, select:focus {
+    border: 1.5px solid #b89b5e;
+}
+button {
+    background: #b89b5e;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #a68a4a;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fffef7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(180, 140, 60, 0.07);
+}
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+}
+th {
+    background: #e9dec7;
+    color: #6d4c1b;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background: #f5ecd7;
+}
+.card {
+    margin-top: 1.5rem;
+}

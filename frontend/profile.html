@@ -1,0 +1,32 @@
+<!-- Profile Section for Career Path Finder -->
+<!-- Add this section to your index.html navigation and main content -->
+<section id="profile" class="content-section">
+  <div class="card profile-card">
+    <h2>My Profile</h2>
+    <form id="profile-form">
+      <label for="profile-name">Name</label><br>
+      <input type="text" id="profile-name" required><br>
+      <label for="profile-email">Email</label><br>
+      <input type="email" id="profile-email" disabled><br>
+      <label for="profile-interests">Interests</label><br>
+      <input type="text" id="profile-interests" placeholder="e.g. AI, Robotics, Design"><br>
+      <button type="submit">Save Changes</button>
+      <span id="profile-status"></span>
+    </form>
+  </div>
+</section>
+
+<script src="profile.js"></script>
+<script>
+// Show profile section when nav is clicked
+if (typeof showSection === 'function') {
+  // If you have a nav, add: <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+}
+// Render profile UI when section is shown
+function showProfileSection() {
+  document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+  document.getElementById('profile').classList.add('active');
+  if (typeof renderProfileSection === 'function') renderProfileSection();
+}
+// Optionally call showProfileSection() on page load or nav click
+</script>

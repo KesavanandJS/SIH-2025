@@ -1,0 +1,201 @@
+,rank,name,owner_ship,grade,TLR,RPC,go,oi,perc,total
+0,1,IIT Madras - Indian Institute of Technology,Public/Government,AAAAA,94.62,97.66,80.42,62.85,100.0,90.04
+1,2,IIT Delhi - Indian Institute of Technology,Public/Government,AAAAA,86.95,96.0,83.43,68.56,96.92,88.12
+2,3,IIT Bombay - Indian Institute of Technology,Public/Government,AAAAA,87.53,90.82,79.18,57.36,88.7,83.96
+3,4,IIT Kanpur - Indian Institute of Technology,Public/Government,AAAAA,87.95,79.98,89.71,59.47,83.01,82.56
+4,5,IIT Kharagpur - Indian Institute of Technology,Public/Government,AAAAA,79.21,84.61,80.91,53.09,82.63,78.89
+5,6,IIT Roorkee - Indian Institute of Technology,Public/Government,AAAAA,75.98,78.1,90.12,63.09,61.36,76.7
+6,7,IIT Guwahati - Indian Institute of Technology,Public/Government,AAAAA,75.89,72.89,84.64,56.9,57.15,72.98
+7,8,NIT Trichy - National Institute of Technology Tiruchirappalli,Public/Government,AAAAA,76.39,58.43,79.16,64.49,64.38,69.17
+8,9,IIT Hyderabad - Indian Institute of Technology,Public/Government,AAAAA,80.32,59.89,72.39,54.85,59.96,68.03
+9,10,NIT Surathkal - National Institute of Technology Karnataka,Public/Government,AAAAA,72.87,56.42,77.69,63.89,53.24,66.04
+10,11,"Jadavpur University, Kolkata",Public/Government,AAAAA,71.38,64.41,78.11,52.33,40.97,65.68
+11,12,VIT Vellore - Vellore Institute of Technology,Private,AAAAA,62.53,73.3,69.44,59.27,49.6,65.53
+12,13,IIT BHU - Indian Institute of Technology Banaras Hindu University,Public/Government,AAAAA,62.62,57.25,81.72,56.06,55.89,63.51
+13,14,IIT Dhanbad - Indian Institute of Technology Indian School of Mines,Public/Government,AAAA,68.7,65.38,71.17,54.34,36.23,63.5
+14,15,NIT Rourkela - National Institute of Technology,Public/Government,AAAA,73.39,59.44,71.8,57.08,24.43,62.36
+15,16,IIT Indore - Indian Institute of Technology,Public/Government,AAAAA,76.28,56.75,70.39,52.48,24.43,61.68
+16,17,"Anna University, Chennai",Public/Government,AAAA,64.33,64.59,57.8,48.88,62.83,61.41
+17,18,ICT Mumbai - Institute of Chemical Technology,Public/Government,AAAAA,76.45,56.99,69.53,54.58,19.95,61.4
+18,19,"Amrita Vishwa Vidyapeetham, Coimbatore",Private,AAAAA,68.97,58.64,61.39,61.77,41.78,60.92
+19,20,IIT Mandi - Indian Institute of Technology,Public/Government,AAAAA,75.76,44.05,77.55,67.16,22.57,60.43
+20,21,NIT Warangal - National Institute of Technology,Public/Government,AAAAA,73.99,45.7,75.12,54.91,35.77,60.0
+21,22,IIT Ropar - Indian Institute of Technology,Public/Government,AAAAA,81.06,38.78,68.75,63.67,30.87,59.16
+22,23,IIT Gandhinagar - Indian Institute of Technology,Public/Government,AAAAA,80.19,39.08,64.63,60.47,35.07,58.27
+23,24,SRM University Chennai - SRM Institute of Science and Technology,Private,AAAA,61.21,59.2,67.16,61.76,22.89,58.02
+24,25,"Amity University, Noida",Private,none,69.95,62.18,55.67,57.33,12.19,57.73
+25,26,JMI New Delhi - Jamia Millia Islamia,Public/Government,AAAA,59.53,57.45,73.54,60.95,16.07,57.51
+26,27,"Siksha 'O' Anusandhan, Bhubaneswar",Private,AAAA,75.94,40.02,68.72,69.54,19.95,57.48
+27,28,Thapar University - Thapar Institute of Engineering and Technology,Private,AAAA,59.52,56.97,71.19,54.56,25.33,57.18
+28,29,BITS Pilani - Birla Institute of Technology and Science,Private,AAAAA,60.84,46.29,78.27,54.2,36.91,56.9
+29,30,IIT Jodhpur - Indian Institute of Technology,Public/Government,AAAAA,78.42,34.92,74.41,66.44,11.78,56.7
+30,31,NIT Calicut - National Institute of Technology,Public/Government,AAAAA,67.13,36.3,76.86,63.72,38.88,56.66
+31,32,VNIT Nagpur - Visvesvaraya National Institute of Technology,Public/Government,AAAAA,66.38,48.85,75.64,53.15,16.07,56.62
+32,33,IIT Patna - Indian Institute of Technology,Public/Government,AAAA,71.45,47.78,62.39,51.47,27.92,56.19
+33,34,NIT Durgapur - National Institute of Technology,Public/Government,AAAA,67.6,43.31,72.76,57.76,21.61,55.76
+34,35,DTU Delhi - Delhi Technological University,Public/Government,AAAA,68.98,34.76,73.36,56.15,42.38,55.65
+35,36,IIT Bhubaneswar - Indian Institute of Technology,Public/Government,AAAAA,70.09,36.9,70.0,60.78,29.29,55.11
+36,37,AMU Aligarh - Aligarh Muslim University,Public/Government,none,70.9,53.82,57.01,42.37,16.43,54.7
+37,38,NIT Silchar - National Institute of Technology,Public/Government,AAAA,65.49,48.0,66.79,57.58,14.56,54.63
+38,39,"Kalasalingam Academy of Research and Education, Virudhunagar",Private,AAAA,73.6,32.26,64.82,74.34,24.73,54.62
+39,40,IIEST Shibpur - Indian Institute of Engineering Science and Technology,Public/Government,AAAAA,60.11,48.02,67.41,48.26,38.23,54.57
+40,41,SASTRA University Thanjavur - Shanmugha Arts Science Technology Research and Academy,Private,AAAAA,70.01,40.17,67.29,55.94,12.59,53.36
+41,42,KIIT University - Kalinga Institute of Industrial Technology,Private,AAAA,70.27,35.74,58.52,76.97,18.58,53.06
+42,43,IIST Thiruvananthapuram - Indian Institute of Space Science and Technology,Public/Government,AAAAA,75.78,25.35,62.6,61.97,33.15,52.37
+43,44,KL University Guntur - Koneru Lakshmaiah Education Foundation,Private,AAAA,70.08,44.8,52.73,56.18,12.99,51.93
+44,45,"Chandigarh University, Chandigarh",Private,none,75.92,24.84,52.44,79.48,30.61,51.73
+45,46,MNIT Jaipur - Malaviya National Institute of Technology,Public/Government,AAAA,62.59,46.35,62.2,55.14,10.53,51.69
+46,47,MNNIT Allahabad - Motilal Nehru National Institute of Technology Allahabad Prayagraj,Public/Government,AAAAA,59.01,37.99,75.22,52.15,18.23,51.17
+47,48,SSN College of Engineering - Sri Sivasubramaniya Nadar College of Engineering,Private,AAAAA,63.78,37.31,63.41,52.63,22.25,50.5
+48,49,"Visvesvaraya Technological University, Belagavi",Public/Government,AAAA,72.06,40.88,52.12,52.48,6.54,50.2
+49,50,NIT Kurukshetra - National Institute of Technology,Public/Government,AAAA,57.73,43.66,63.35,55.32,14.94,50.11
+50,51,LPU Jalandhar - Lovely Professional University,Private,AAAA,65.51,36.85,51.86,67.5,17.52,49.58
+51,52,NIT Jalandhar - Dr B R Ambedkar National Institute of Technology,Public/Government,AAAA,68.14,31.7,59.18,63.99,12.59,49.45
+52,53,"Birla Institute of Technology, Mesra (BIT Mesra) - Birla Institute of Technology",Private,AAAA,66.55,34.54,56.6,50.59,26.21,49.33
+53,54,Sathyabama University - Sathyabama Institute of Science and Technology,Private,AAAA,64.87,37.36,46.78,63.38,21.93,48.56
+54,55,MIT Manipal - Manipal Institute of Technology,Private,AAAAA,67.36,33.36,49.48,62.47,19.61,48.33
+55,56,IIT Tirupati - Indian Institute of Technology,Public/Government,AAA,77.47,14.94,60.23,56.79,27.07,48.16
+56,57,PSG Tech Coimbatore - PSG College of Technology,Private,AAAA,66.5,24.91,50.8,48.09,52.94,47.68
+57,58,SVNIT Surat - Sardar Vallabhbhai National Institute of Technology,Public/Government,AAAA,56.53,38.64,65.08,49.87,10.53,47.61
+58,59,"Banasthali Vidyapith, Banasthali",Private,AAAA,65.21,18.25,69.77,73.13,7.0,47.0
+59,60,NIT Meghalaya - National Institute of Technology,Public/Government,AAAA,66.65,27.9,57.7,62.99,4.63,46.67
+60,61,UPES Dehradun - University of Petroleum and Energy Studies,Private,none,65.4,27.84,48.09,62.24,26.21,46.43
+61,62,IIIT Hyderabad - International Institute of Information Technology,Private,AAAAA,49.16,38.57,63.99,51.02,21.93,46.41
+62,63,NIT Patna - National Institute of Technology,Public/Government,AAAA,60.96,32.77,65.77,42.7,7.0,46.24
+63,64,"Graphic Era University, Dehradun",Private,AAAA,71.05,18.2,48.13,67.27,27.35,45.87
+64,65,NIT Raipur - National Institute of Technology,Public/Government,AAAA,55.62,34.76,61.22,56.62,7.0,45.71
+65,66,NIT Srinagar - National Institute of Technology,Public/Government,AAAA,63.2,19.8,64.43,65.87,11.37,45.52
+66,67,MSRIT Bangalore - Ramaiah Institute of Technology,Private,AAAA,66.1,19.82,61.92,55.17,14.94,45.17
+67,68,IIT Palakkad - Indian Institute of Technology,Public/Government,AAA,70.69,12.11,60.25,63.9,16.43,44.92
+68,69,IIIT Delhi - Indraprastha Institute of Information Technology,Public/Government,AAAA,50.13,34.83,69.3,42.55,11.78,44.79
+69,70,MANIT Bhopal - Maulana Azad National Institute of Technology,Public/Government,AAAA,54.91,30.47,62.3,59.06,6.54,44.63
+70,71,DIAT Pune - Defence Institute of Advanced Technology,Public/Government,none,62.13,36.01,53.95,41.33,2.64,44.62
+71,72,COEP Pune - College of Engineering,Public/Government,AAAA,62.33,17.1,65.13,51.65,23.51,44.38
+72,73,SKCET Coimbatore - Sri Krishna College of Engineering and Technology,Private,AAAA,62.4,17.13,64.51,50.18,23.82,44.16
+73,74,GGSIPU Delhi - Guru Gobind Singh Indraprastha University,Public/Government,AAAA,55.21,33.02,52.63,47.6,22.57,44.02
+74,75,"Manipal University, Jaipur",Private,AAAA,63.55,24.44,56.67,59.54,1.6,43.83
+75,76,JNTUH University - Jawaharlal Nehru Technological University,Public/Government,none,65.66,27.4,44.02,53.95,6.54,42.77
+76,77,"Andhra University College of Engineering, Visakhapatnam",Public/Government,AAAA,61.41,11.74,72.13,56.02,7.91,42.76
+77,78,IIITM Gwalior - Atal Bihari Vajpayee Indian Institute of Information Technology and Management,Public/Government,AAAAA,52.59,20.54,71.53,56.11,7.0,42.56
+78,79,NSUT Delhi - Netaji Subhas University of Technology,Public/Government,AAAA,52.77,19.49,68.51,44.45,23.2,42.14
+79,80,NIT Agartala - National Institute of Technology,Public/Government,AAAA,56.59,25.45,54.18,59.63,5.12,41.92
+80,81,IIIT Bangalore - International Institute of Information Technology,Public/Government,none,55.22,16.15,63.61,59.96,17.88,41.91
+81,82,IIITDM Jabalpur - PDPM Indian Institute of Information Technology Design and Manufacturing,Public/Government,AAAA,45.77,28.74,66.45,59.38,2.12,41.79
+82,83,BMSCE Bangalore - BMS College of Engineering,Private,AAAA,59.49,15.53,60.73,52.29,18.23,41.71
+83,84,Vel Tech Chennai - Vel Tech Rangarajan Dr Sagunthala R and D Institute of Science and Technology,Private,AAAA,54.81,31.13,44.9,63.79,2.12,41.35
+84,85,TCE Madurai - Thiagarajar College of Engineering,Private,AAAA,51.93,19.32,59.66,48.59,29.29,41.1
+85,86,"National Institute of Food Technology, Entrepreneurship and Management, Thanjavur",Public/Government,AAA,71.86,14.18,46.47,56.98,2.64,41.06
+86,87,PEC Chandigarh - Punjab Engineering College,Public/Government,AAAA,50.68,17.94,65.84,53.67,19.27,41.05
+87,88,NIT Goa - National Institute of Technology,Public/Government,AAAA,54.95,22.51,54.51,58.12,8.36,40.78
+88,89,RVCE Bangalore - RV College of Engineering,Private,AAAA,61.27,16.36,55.3,50.75,12.99,40.73
+89,90,NIT Jamshedpur - National Institute of Technology,Public/Government,AAAA,53.43,19.09,67.16,46.77,8.36,40.71
+90,91,"SR University, Warangal",Private,AAAA,65.51,13.28,47.9,62.23,12.59,40.69
+91,92,"Panjab University, Chandigarh",Public/Government,none,40.82,45.4,44.4,46.52,11.78,40.58
+92,93,IIIT Allahabad - Indian Institute of Information Technology,Public/Government,AAAA,42.53,18.48,73.99,51.68,22.57,40.53
+93,94,JIIT Noida - Jaypee Institute of Information Technology,Private,AAAA,51.63,25.12,59.96,48.68,6.07,40.5
+94,95,"Rajalakshmi Engineering College, Chennai",Private,AAAA,65.03,9.2,59.85,59.19,3.14,40.47
+95,96,"The NorthCap University, Gurgaon",Private,AAAA,64.69,14.58,54.88,51.64,4.14,40.33
+96,97,SIT Tumkur - Siddaganga Institute of Technology,Private,AAAA,61.65,14.04,55.39,51.19,13.39,40.24
+97,98,"CV Raman Global University, Bhubaneswar",Private,AAAA,63.65,5.33,59.35,63.98,12.19,40.19
+98,99,"Vignan's Foundation for Science Technology and Research, Guntur",Private,AAAA,61.64,21.12,46.96,56.3,3.14,40.16
+99,100,"PES University, Bangalore",Private,AAAA,56.27,14.94,63.79,51.02,9.24,40.14
+100,101,SMVDU Katra - Shri Mata Vaishno Devi University,Public/Government,AAAA,61.82,24.29,48.14,44.01,2.12,40.08
+101,102,BSAU Chennai - BS Abdur Rahman Crescent Institute of Science and Technology,Private,AAAA,62.27,21.2,49.0,46.66,4.14,39.92
+102,103,GITAM Bhubaneswar - Gandhi Institute of Technology and Management,Private,none,51.11,21.08,63.88,49.81,5.12,39.92
+103,104,CIT Coimbatore - Coimbatore Institute of Technology,Public/Government,AAAA,63.02,11.43,49.68,49.28,26.21,39.83
+104,105,MRIIRS Faridabad - Manav Rachna International Institute of Research and Studies,Private,none,59.69,9.37,60.8,57.32,10.53,39.66
+105,106,"Pandit Deendayal Energy University, Gandhinagar",Private,none,56.46,26.12,54.25,35.49,4.63,39.64
+106,107,Karunya University - Karunya Institute of Technology and Sciences,Private,AAAA,50.77,30.7,43.86,51.16,10.95,39.43
+107,108,"Kumaraguru College of Technology, Coimbatore",Private,AAAA,59.36,15.32,54.13,45.08,15.69,39.32
+108,109,NIT Manipur - National Institute of Technology,Public/Government,AAAA,63.58,16.86,43.79,59.74,4.63,39.32
+109,110,"College of Engineering, Trivandrum",Public/Government,AAAA,60.64,12.79,54.11,52.55,11.37,39.24
+110,111,VSSUT Sambalpur - Veer Surendra Sai University of Technology,Public/Government,AAAA,54.79,27.21,47.7,46.43,3.65,39.14
+111,112,IIIT Guwahati - Indian Institute of Information Technology,Private,AAAA,50.78,11.48,56.46,59.0,32.15,39.09
+112,113,VNR VJIET Hyderabad - VNR Vignana Jyothi Institute of Engineering and Technology,Private,AAAA,59.74,14.47,53.54,50.56,10.11,39.04
+113,114,Amity University Gurgaon - Amity University,Private,none,62.71,15.6,46.03,57.56,4.14,38.87
+114,115,"Jain University, Bangalore",Private,none,53.63,22.75,47.37,58.6,3.14,38.55
+115,116,MIT-WPU Pune - Dr Vishwanath Karad MIT World Peace University,Private,AAA,65.58,9.67,54.35,48.12,2.64,38.51
+116,117,"University College of Engineering, Osmania University, Hyderabad",Public/Government,AAAA,60.14,9.48,55.98,61.92,2.12,38.49
+117,118,KEC Erode - Kongu Engineering College,Private,AAAA,58.83,14.45,51.81,43.29,16.43,38.31
+118,119,VJTI Mumbai - Veermata Jijabai Technological Institute,Public/Government,AAAA,50.22,13.68,63.97,54.46,8.8,38.29
+119,120,DEI Agra - Dayalbagh Educational Institute,Public/Government,AAAA,62.73,9.86,52.88,49.82,9.24,38.26
+120,121,NHCE Bangalore - New Horizon College of Engineering,Private,AAAA,56.94,6.53,64.91,56.49,5.12,38.18
+121,122,"Sri Krishna College of Technology, Coimbatore",Private,AAAA,54.89,12.92,61.72,46.61,7.91,38.14
+122,123,"Tezpur University, Tezpur",Public/Government,AAA,50.32,30.7,44.63,40.88,7.91,38.12
+123,124,PSGITECH Coimbatore - PSG Institute of Technology and Applied Research,Private,AAA,61.19,6.18,54.07,49.89,20.29,38.04
+124,125,"Nirma University, Ahmedabad",Private,AAAA,53.06,18.6,57.81,45.37,4.14,38.01
+125,126,Shoolini University Solan - Shoolini University of Biotechnology and Management Sciences,Private,AAAA,49.12,27.77,45.77,52.78,5.12,38.01
+126,127,NIFTEM Sonepat - National Institute of Food Technology Entrepreneurship and Management,Public/Government,AAAA,58.14,8.73,57.14,63.08,1.6,37.96
+127,128,NIT Hamirpur - National Institute of Technology,Public/Government,AAAA,47.42,23.84,57.26,45.22,5.6,37.91
+128,129,JNTUK Kakinada - Jawaharlal Nehru Technological University,Public/Government,AA,57.01,19.32,47.56,50.19,3.65,37.79
+129,130,"Mepco Schlenk Engineering College, Sivakasi",Private,AAA,51.13,18.85,51.25,50.23,15.32,37.79
+130,131,BVUCOE Pune - Bharati Vidyapeeth Deemed University College of Engineering,Private,AAAA,57.32,3.15,61.88,67.14,5.12,37.75
+131,132,NIT Uttarakhand - National Institute of Technology,Public/Government,AAAA,61.05,18.92,44.2,45.53,3.65,37.75
+132,133,"Amity University, Jaipur",Private,none,51.65,16.15,58.35,54.38,2.12,37.65
+133,134,DAIICT Gandhinagar - Dhirubhai Ambani Institute of Information and Communication Technology,Private,AAAA,48.6,10.64,71.81,48.99,6.07,37.64
+134,135,NMIMS Mumbai - Narsee Monjee Institute of Management Studies,Private,none,56.79,12.46,55.01,56.41,1.6,37.58
+135,136,NIT Puducherry - National Institute of Technology Puducherry Karaikal,Public/Government,AAAA,52.4,10.61,52.52,71.66,9.24,37.49
+136,137,PESCE Mandya - PES College of Engineering,Private,AAAA,1.47,65.45,57.73,37.4, , 
+137,138,JUIT Solan - Jaypee University of Information Technology,Private,AAAA,44.77,25.87,57.18,44.52,3.14,37.39
+138,139,"CEC Landran - Chandigarh Engineering College, Landran Campus",Private,AAA,64.49,6.87,43.96,71.25,0.54,37.37
+139,140,"Anurag University, Hyderabad",Private,AAA,61.17,4.04,53.57,60.93,9.68,37.33
+140,141,VRSEC Vijayawada - Velagapudi Ramakrishna Siddhartha Engineering College,Private,AAAA,57.86,14.83,49.24,52.3,4.14,37.3
+141,142,VIT Pune - Vishwakarma Institute of Technology,Private,AAAA,58.11,7.27,59.81,50.6,6.54,37.28
+142,143,"YMCA Faridabad - JC Bose University of Science and Technology, YMCA",Public/Government,AAAA,57.53,10.44,57.83,50.54,2.64,37.27
+143,144,Chitkara University Chandigarh - Chitkara University,Private,none,48.74,16.2,50.82,58.14,17.88,37.24
+144,145,NIET Greater Noida - Noida Institute of Engineering and Technology,Private,AAA,56.66,3.19,58.51,52.16,23.2,37.2
+145,146,RCOEM Nagpur - Shri Ramdeobaba College of Engineering and Management,Private,AAAA,56.99,9.32,57.59,50.9,5.12,37.02
+146,147,"Galgotias University, Greater Noida",Private,AAA,52.91,16.04,49.0,55.26,8.8,36.89
+147,148,GRIET Hyderabad - Gokaraju Rangaraju Institute of Engineering and Technology,Private,AAAA,54.04,12.6,57.1,50.18,3.65,36.79
+148,149,MSU Baroda - Maharaja Sayajirao University of Baroda,Public/Government,none,54.72,14.21,53.7,47.61,6.07,36.78
+149,150,NIFFT Ranchi - National Institute of Advanced Manufacturing Technology,Public/Government,AAAA,67.53,4.93,49.21,49.31,2.64,36.77
+150,151,PEC Puducherry - Puducherry Technological University,Public/Government,AAAA,46.38,15.51,59.49,54.2,8.8,36.77
+151,152,HITS Chennai - Hindustan Institute of Technology and Science,Private,AAAA,50.08,26.27,42.12,48.27,5.6,36.71
+152,153,"Amity University, Gwalior",Private,AAA,60.11,6.8,58.15,46.78,1.08,36.49
+153,154,"Mahindra University, Hyderabad",Private,none,4.89,63.89,49.22,36.46, , 
+154,155,"RMK Engineering College, Thiruvallur",Private,AAAA,57.45,7.99,56.48,52.18,3.14,36.46
+155,156,SIMATS Chennai - Saveetha Institute of Medical and Technical Sciences,Private,AAAA,45.55,30.02,35.89,64.76,1.08,36.44
+156,157,"Sri Sai Ram Engineering College, Chennai",Private,AAAA,58.22,13.81,45.94,51.02,5.12,36.41
+157,158,"JSS Science and Technology University, Mysuru",Private,AAAA,54.77,6.55,58.03,51.84,11.78,36.36
+158,159,Vels University Chennai - Vel's Institute of Science Technology and Advanced Studies,Private,AAAA,51.96,23.56,47.23,41.85,0.54,36.35
+159,160,GCT Coimbatore - Government College of Technology,Public/Government,AAAA,47.78,10.04,58.06,49.82,22.89,36.22
+160,161,"Silicon Institute of Technology, Bhubaneswar",Private,AAAA,58.97,3.51,55.86,62.33,0.54,36.19
+161,162,"Vardhaman College of Engineering, Hyderabad",Private,AAAA,51.89,9.32,54.59,48.0,20.62,36.15
+162,163,GHRCE Nagpur - GH Raisoni College of Engineering,Private,AAAA,57.48,10.43,48.65,54.56,5.6,36.12
+163,164,"Sharda University, Greater Noida",Private,AAAA,57.75,17.36,37.43,55.58,5.12,36.1
+164,165,"Sree Vidyanikethan Engineering College, Tirupati (SVEC Tirupati) - School of Engineering and Technology, Mohan Babu University",Private,AAAA,53.62,9.36,50.86,50.83,19.27,36.08
+165,166,CBIT Hyderabad - Chaitanya Bharathi Institute of Technology,Private,AAAA,57.49,3.07,56.9,51.94,10.95,35.84
+166,167,"Rabindranath Tagore University, Raisen",Private,AAA,2.01,51.24,61.99,35.62, , 
+167,168,SPIT Mumbai - Sardar Patel Institute of Technology,Private,AAAA,46.53,13.1,63.92,46.41,3.14,35.62
+168,169,NEC Kovilpatti - National Engineering College,Private,AAA,55.52,12.09,51.33,47.7,2.64,35.58
+169,170,"CVR College of Engineering, Hyderabad",Private,AAAA,61.18,4.72,50.85,53.99,1.6,35.51
+170,171,NIT Arunachal Pradesh - National Institute of Technology,Public/Government,AAA,55.97,15.27,40.9,54.84,4.63,35.49
+171,172,AIT Pune - Army Institute of Technology,Private,AAAA,51.14,2.36,64.88,57.86,5.6,35.38
+172,173,NIT Sikkim - National Institute of Technology,Public/Government,AAA,64.25,10.26,40.27,47.61,1.6,35.33
+173,174,"Sona College of Technology, Salem",Private,AAAA,57.0,8.0,52.71,48.44,4.14,35.29
+174,175,CIT Chennai - Chennai Institute of Technology,Private,AAAA,55.23,9.2,47.13,56.71,8.36,35.27
+175,176,"NMAM Institute of Technology, Karkala Taluk",Private,AAA,55.31,11.41,50.35,48.78,3.14,35.27
+176,177,IGDTUW Delhi - Indira Gandhi Delhi Technical University for Women,Public/Government,AAAA,39.4,11.03,67.25,50.13,16.43,35.23
+177,178,SLIET Longowal - Sant Longowal Institute of Engineering and Technology,Public/Government,AAA,57.44,18.52,30.12,60.83,3.14,35.2
+178,179,"DIT University, Dehradun",Private,AAA,50.99,9.6,54.93,56.61,3.14,35.14
+179,180,CMRIT Bangalore - CMR Institute of Technology,Private,AAAA,57.33,8.29,49.8,52.0,2.64,35.11
+180,181,"Easwari Engineering College, Chennai",Private,AAAA,52.8,7.21,57.95,51.24,3.65,35.07
+181,182,RGIPT Amethi - Rajiv Gandhi Institute of Petroleum Technology,Public/Government,AAA,7.04,54.21,43.96,34.99, , 
+182,183,NMIT Bangalore - Nitte Meenakshi Institute of Technology,Private,AAAA,56.55,7.7,50.82,53.8,1.6,34.97
+183,184,IIITDM Kancheepuram - Indian Institute of Information Technology Design and Manufacturing,Public/Government,AAAA,36.37,13.15,62.59,51.36,24.12,34.93
+184,185,YCCE Nagpur - Yeshwantrao Chavan College of Engineering,Private,AAAA,2.41,8.76,57.06,50.73,0.54,34.88
+185,186,"GLA University, Mathura",Private,AAA,5.51,19.67,37.6,45.63,1.08,34.74
+186,187,"KIET Group of Institutions, Ghaziabad (KIET Ghaziabad) - KIET Group of Institutions",Private,AAAA,53.34,9.39,55.11,46.29,2.64,34.73
+187,188,GMRIT Rajam - GMR Institute of Technology,Private,AAAA,57.15,15.27,42.91,41.85,2.12,34.71
+188,189,"Christ University, Bangalore",Private,AAA,45.89,19.21,41.38,52.22,16.07,34.64
+189,190,IITRAM Ahmedabad - Institute of Infrastructure Technology Research and Management,Public/Government,AAA,54.88,20.07,40.44,37.21,1.08,34.41
+190,191,MMU Ambala - Maharishi Markandeshwar University,Private,none,59.42,14.51,34.92,49.5,2.64,34.37
+191,192,GCET Greater Noida - Galgotias College of Engineering and Technology,Private,AAA,54.75,6.98,51.54,48.41,6.07,34.29
+192,193,DYPIET Pimpri - Dr DY Patil Institute of Technology,Private,AAA,53.48,1.5,59.7,51.98,4.63,34.1
+193,194,NIT Delhi - National Institute of Technology,Public/Government,AAAA,41.6,22.6,44.71,42.73,14.94,33.96
+194,195,"GL Bajaj Institute of Technology and Management, Greater Noida",Private,AAAA,54.49,10.21,47.98,47.79,1.6,33.95
+195,196,"KLE Technological University, Hubballi",Private,AAA,51.27,10.37,50.84,48.3,4.14,33.9
+196,197,DJSCE Mumbai - Dwarkadas J Sanghvi College of Engineering,Private,AAAA,53.37,6.11,58.32,42.72,1.08,33.88
+197,198,SVCET Chittoor - Sri Venkateswara College of Engineering and Technology,Private,AAA,51.15,1.54,59.07,58.37,3.14,33.77
+198,199,BMSIT Bangalore - BMS Institute of Technology and Management,Private,AAAA,46.4,4.77,56.46,54.39,16.8,33.76
+199,200,VJIT Hyderabad - Vidya Jyothi Institute of Technology,Private,AAA,57.93,2.81,46.59,55.46,6.07,33.7

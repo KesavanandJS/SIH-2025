@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Finder & College Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Career Path Finder</div>
+        <ul>
+            <li><a href="#" onclick="showSection('quiz')" id="nav-quiz">Aptitude Quiz</a></li>
+            <li><a href="#" onclick="showSection('career')" id="nav-career">Career Mapping</a></li>
+            <li><a href="#" onclick="showSection('colleges')" id="nav-colleges">Nearby Colleges</a></li>
+            <li><a href="#" onclick="showSection('scholarship')" id="nav-scholarship">Scholarship Estimator</a></li>
+            <li><a href="#" onclick="showSection('timeline')" id="nav-timeline">Timeline Tracker</a></li>
+            <li><a href="#" onclick="showSection('profile')" id="nav-profile">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="quiz" class="content-section active">
+            <div class="card">
+                <h2>Aptitude Quiz</h2>
+                <div id="quiz-content">
+                    <!-- Quiz UI will go here -->
+                </div>
+            </div>
+        </section>
+        <section id="career" class="content-section">
+            <div class="card">
+                <h2>Course-to-Career Mapping</h2>
+                <div id="career-content">
+                    <!-- Career mapping UI will go here -->
+                </div>
+            </div>
+        </section>
+        <section id="colleges" class="content-section">
+            <div class="card">
+                <h2>Nearby Colleges</h2>
+                <div id="colleges-content">
+                    <!-- Colleges UI will go here -->
+                </div>
+            </div>
+        </section>
+        <section id="scholarship" class="content-section">
+            <div class="card">
+                <h2>Scholarship & Cost Estimator</h2>
+                <div id="scholarship-content">
+                    <!-- Scholarship UI will go here -->
+                </div>
+            </div>
+        </section>
+        <section id="timeline" class="content-section">
+            <div class="card">
+                <h2>Timeline Tracker</h2>
+                <div id="timeline-content">
+                    <!-- Timeline UI will go here -->
+                </div>
+            </div>
+        </section>
+        <section id="profile" class="content-section">
+            <div class="card profile-card">
+                <h2>My Profile</h2>
+                <form id="profile-form">
+                    <label for="profile-name">Name</label><br>
+                    <input type="text" id="profile-name" required><br>
+                    <label for="profile-email">Email</label><br>
+                    <input type="email" id="profile-email" disabled><br>
+                    <label for="profile-interests">Interests</label><br>
+                    <input type="text" id="profile-interests" placeholder="e.g. AI, Robotics, Design"><br>
+                    <button type="submit">Save Changes</button>
+                    <span id="profile-status"></span>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
