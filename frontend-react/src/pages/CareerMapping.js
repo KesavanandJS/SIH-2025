@@ -21,15 +21,15 @@ function CareerMapping() {
 
   return (
     <Box maxWidth={600} mx="auto" mt={4}>
-      <Paper sx={{ p: 3 }}>
-        <Typography variant="h5" gutterBottom>Course-to-Career Mapping</Typography>
+      <Paper sx={{ p: 3, boxShadow: 4, borderRadius: 3, background: '#fffef8' }}>
+        <Typography variant="h4" gutterBottom sx={{ color: '#1976d2', fontWeight: 700, textAlign: 'center', mb: 3 }}>Course-to-Career Mapping</Typography>
         <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel>Stream</InputLabel>
           <Select value={stream} label="Stream" onChange={e => setStream(e.target.value)}>
             {streams.map(s => <MenuItem key={s} value={s}>{s}</MenuItem>)}
           </Select>
         </FormControl>
-        <Button variant="contained" color="primary" onClick={handleSubmit}>Show Mapping</Button>
+        <Button variant="contained" color="primary" onClick={handleSubmit} sx={{ mb: 2, fontWeight: 600 }}>Show Mapping</Button>
         {error && <Alert severity="error" sx={{ mt: 2 }}>{error}</Alert>}
         {result && (
           <Box mt={3}>

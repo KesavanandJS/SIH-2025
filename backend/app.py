@@ -2,7 +2,6 @@
 
 
 
-
 from flask import Flask, request, jsonify, send_from_directory, render_template_string
 from flask_cors import CORS
 import pandas as pd
@@ -13,6 +12,50 @@ import joblib
 
 app = Flask(__name__)
 CORS(app)
+
+
+# --- Utility: Preview J&K College Dataset Columns ---
+@app.route('/api/colleges-jk/columns', methods=['GET'])
+def colleges_jk_columns():
+    jk_path = os.path.join(os.path.dirname(__file__), '../dataset/college_jk.xlsx')
+    try:
+        df = pd.read_excel(jk_path)
+        columns = list(df.columns)
+        sample = df.iloc[0].to_dict() if not df.empty else {}
+        return jsonify({"columns": columns, "sample": sample})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+# --- Jammu & Kashmir Colleges API ---
+@app.route('/api/colleges-jk', methods=['GET'])
+def colleges_jk():
+    jk_path = os.path.join(os.path.dirname(__file__), '../dataset/college_jk.xlsx')
+    try:
+        df = pd.read_excel(jk_path)
+        # Load KMeans model
+        import joblib
+        model_path = os.path.join(os.path.dirname(__file__), 'models', 'college_jk_kmeans.pkl')
+        if os.path.exists(model_path):
+            from sklearn.preprocessing import LabelEncoder
+            feature_cols = [
+                'District', 'University Type', 'University Name', 'College Name', 'College Type', 'Address'
+            ]
+            # Encode features as in training
+            for col in feature_cols:
+                df[col] = df[col].astype(str)
+                le = LabelEncoder()
+                df[col + '_enc'] = le.fit_transform(df[col])
+            X = df[[col + '_enc' for col in feature_cols]]
+            kmeans = joblib.load(model_path)
+            clusters = kmeans.predict(X)
+            df['Cluster'] = clusters
+            # Sort by cluster
+            df = df.sort_values('Cluster')
+        colleges = df.fillna('').to_dict(orient='records')
+        return jsonify({"colleges": colleges, "count": len(colleges)})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 
 # MongoDB connection (update URI as needed)
 MONGO_URI = os.environ.get('MONGO_URI', 'mongodb://localhost:27017')
@@ -27,24 +70,24 @@ def api_career_mapping():
     stream = request.args.get('stream', 'Science')
     mapping = {
         "Science": [
-            ("Science", "B.Tech/B.Sc"),
-            ("B.Tech/B.Sc", "Engineer/Scientist"),
-            ("Engineer/Scientist", "Avg Salary: ₹6-12LPA")
+            ["Science", "B.Tech/B.Sc"],
+            ["B.Tech/B.Sc", "Engineer/Scientist"],
+            ["Engineer/Scientist", "Avg Salary: ₹6-12LPA"]
         ],
         "Commerce": [
-            ("Commerce", "B.Com/BBA"),
-            ("B.Com/BBA", "Accountant/Manager"),
-            ("Accountant/Manager", "Avg Salary: ₹4-8LPA")
+            ["Commerce", "B.Com/BBA"],
+            ["B.Com/BBA", "Accountant/Manager"],
+            ["Accountant/Manager", "Avg Salary: ₹4-8LPA"]
         ],
         "Arts": [
-            ("Arts", "BA/Design"),
-            ("BA/Design", "Teacher/Designer"),
-            ("Teacher/Designer", "Avg Salary: ₹3-7LPA")
+            ["Arts", "BA/Design"],
+            ["BA/Design", "Teacher/Designer"],
+            ["Teacher/Designer", "Avg Salary: ₹3-7LPA"]
         ],
         "Vocational": [
-            ("Vocational", "Diploma/ITI"),
-            ("Diploma/ITI", "Technician/Operator"),
-            ("Technician/Operator", "Avg Salary: ₹2-5LPA")
+            ["Vocational", "Diploma/ITI"],
+            ["Diploma/ITI", "Technician/Operator"],
+            ["Technician/Operator", "Avg Salary: ₹2-5LPA"]
         ]
     }
     return jsonify({"stream": stream, "mapping": mapping.get(stream, [])})

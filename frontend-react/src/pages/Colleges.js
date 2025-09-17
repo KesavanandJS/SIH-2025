@@ -1,68 +1,67 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Paper, Typography, TextField, Select, MenuItem, InputLabel, FormControl, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Alert } from '@mui/material';
+import { Box, Paper, Typography, TextField, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Alert, Pagination } from '@mui/material';
+
 
 function Colleges() {
   const [colleges, setColleges] = useState([]);
-  const [state, setState] = useState('All');
   const [search, setSearch] = useState('');
-  const [states, setStates] = useState([]);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('/api/colleges')
+    fetch('/api/colleges-jk')
       .then(res => res.json())
       .then(data => {
-        setColleges(data);
-        const uniqueStates = Array.from(new Set(data.map(c => c.state))).sort();
-        setStates(['All', ...uniqueStates]);
+        setColleges(data.colleges || []);
       })
-      .catch(() => setError('Failed to load colleges.'));
+      .catch(() => setError('Failed to load J&K colleges.'));
   }, []);
 
   const filtered = colleges.filter(c =>
-    (state === 'All' || c.state === state) &&
-    (!search || c.name.toLowerCase().includes(search.toLowerCase()))
+    (!search || (c["College Name"] && c["College Name"].toLowerCase().includes(search.toLowerCase())))
   );
+
+  // Pagination logic
+  const [page, setPage] = useState(1);
+  const rowsPerPage = 10;
+  const pageCount = Math.ceil(filtered.length / rowsPerPage);
+  const paginated = filtered.slice((page - 1) * rowsPerPage, page * rowsPerPage);
 
   return (
     <Box maxWidth={1000} mx="auto" mt={4}>
       <Paper sx={{ p: 3 }}>
-        <Typography variant="h5" gutterBottom>Top Engineering Colleges</Typography>
+        <Typography variant="h5" gutterBottom>Jammu & Kashmir Colleges</Typography>
         <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
-          <FormControl sx={{ minWidth: 180 }}>
-            <InputLabel>State</InputLabel>
-            <Select value={state} label="State" onChange={e => setState(e.target.value)}>
-              {states.map(s => <MenuItem key={s} value={s}>{s}</MenuItem>)}
-            </Select>
-          </FormControl>
           <TextField label="Search by College Name" value={search} onChange={e => setSearch(e.target.value)} />
         </Box>
         {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
-              <TableRow>
-                <TableCell>Rank</TableCell>
-                <TableCell>College Name</TableCell>
-                <TableCell>Type</TableCell>
-                <TableCell>Grade</TableCell>
-                <TableCell>Score</TableCell>
+              <TableRow sx={{ background: '#e9dec7' }}>
+                {Object.keys(filtered[0] || {}).map((col, idx) => (
+                  <TableCell key={idx} sx={{
+                    fontWeight: 700,
+                    color: col === 'Cluster' ? '#1976d2' : '#6d4c1b',
+                    background: col === 'Cluster' ? '#f5ecd7' : undefined
+                  }}>{col.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
-              {filtered.map((c, idx) => (
-                <TableRow key={idx}>
-                  <TableCell>{c.rank}</TableCell>
-                  <TableCell>{c.name}</TableCell>
-                  <TableCell>{c.owner_ship}</TableCell>
-                  <TableCell>{c.grade}</TableCell>
-                  <TableCell>{c.total}</TableCell>
+              {paginated.map((c, idx) => (
+                <TableRow key={idx} sx={{ background: idx % 2 === 0 ? '#fffef8' : '#f5ecd7' }}>
+                  {Object.entries(c).map(([col, val], i) => (
+                    <TableCell key={i} sx={col === 'Cluster' ? { fontWeight: 700, color: '#1976d2', background: '#fff8ee' } : {}}>{val}</TableCell>
+                  ))}
                 </TableRow>
               ))}
             </TableBody>
           </Table>
         </TableContainer>
-        <Typography variant="body2" sx={{ mt: 2 }}>Showing {filtered.length} colleges</Typography>
+        <Box display="flex" justifyContent="center" mt={2}>
+          <Pagination count={pageCount} page={page} onChange={(_, val) => setPage(val)} color="primary" shape="rounded" />
+        </Box>
+        <Typography variant="body2" sx={{ mt: 2, textAlign: 'center' }}>Showing {paginated.length} of {filtered.length} colleges</Typography>
       </Paper>
     </Box>
   );
