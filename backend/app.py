@@ -1,3 +1,8 @@
+
+
+
+
+
 from flask import Flask, request, jsonify, send_from_directory, render_template_string
 from flask_cors import CORS
 import pandas as pd
@@ -15,6 +20,34 @@ client = MongoClient(MONGO_URI)
 db = client['career_app']
 timeline_collection = db['timeline']
 users_collection = db['users']
+
+# --- Career Mapping API ---
+@app.route('/api/career-mapping', methods=['GET'])
+def api_career_mapping():
+    stream = request.args.get('stream', 'Science')
+    mapping = {
+        "Science": [
+            ("Science", "B.Tech/B.Sc"),
+            ("B.Tech/B.Sc", "Engineer/Scientist"),
+            ("Engineer/Scientist", "Avg Salary: ₹6-12LPA")
+        ],
+        "Commerce": [
+            ("Commerce", "B.Com/BBA"),
+            ("B.Com/BBA", "Accountant/Manager"),
+            ("Accountant/Manager", "Avg Salary: ₹4-8LPA")
+        ],
+        "Arts": [
+            ("Arts", "BA/Design"),
+            ("BA/Design", "Teacher/Designer"),
+            ("Teacher/Designer", "Avg Salary: ₹3-7LPA")
+        ],
+        "Vocational": [
+            ("Vocational", "Diploma/ITI"),
+            ("Diploma/ITI", "Technician/Operator"),
+            ("Technician/Operator", "Avg Salary: ₹2-5LPA")
+        ]
+    }
+    return jsonify({"stream": stream, "mapping": mapping.get(stream, [])})
 
 # --- Study Materials API ---
 @app.route('/api/study_materials', methods=['GET'])
@@ -60,15 +93,20 @@ def aptitude_quiz():
     responses = data.get('responses', [])
     mapping = {'Yes': 2, 'Sometimes': 1, 'No': 0}
     features = [mapping.get(r, 0) for r in responses]
+    print(f"[DEBUG] /api/quiz received features: {features} (len={len(features)})")
     if quiz_model:
-        pred = quiz_model.predict([features])[0]
-        # Optionally, get probabilities for all streams
-        if hasattr(quiz_model, 'predict_proba'):
-            proba = quiz_model.predict_proba([features])[0]
-            stream_scores = {s: float(p) for s, p in zip(quiz_model.classes_, proba)}
-        else:
-            stream_scores = {pred: 1.0}
-        return jsonify({"recommended": [pred], "scores": stream_scores})
+        try:
+            pred = quiz_model.predict([features])[0]
+            # Optionally, get probabilities for all streams
+            if hasattr(quiz_model, 'predict_proba'):
+                proba = quiz_model.predict_proba([features])[0]
+                stream_scores = {s: float(p) for s, p in zip(quiz_model.classes_, proba)}
+            else:
+                stream_scores = {pred: 1.0}
+            return jsonify({"recommended": [pred], "scores": stream_scores})
+        except Exception as e:
+            print(f"[ERROR] Quiz model prediction failed: {e}")
+            return jsonify({"error": str(e)}), 500
     # fallback: rule-based
     stream_scores = {"Science": 0, "Commerce": 0, "Arts": 0, "Vocational": 0}
     stream_map = [
