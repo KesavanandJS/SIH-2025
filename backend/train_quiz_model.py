@@ -3,42 +3,48 @@
 
 
 
-# Use real college data to train a stream classifier (proxy: grade/ownership to stream)
+
+# Generate a synthetic quiz dataset for realistic stream prediction
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 import os
+import numpy as np
 
-csv_path = os.path.join(os.path.dirname(__file__), '../dataset/200_top_Engineering_Colleges_india.csv')
-df = pd.read_csv(csv_path)
+# Quiz questions (7 as in your app)
+questions = [
+    "Do you enjoy solving math and science problems?",
+    "Are you interested in business, finance, or economics?",
+    "Do you like reading literature, history, or philosophy?",
+    "Are you passionate about art, music, or design?",
+    "Do you enjoy working with computers or technology?",
+    "Are you interested in hands-on vocational skills (mechanic, electrician, etc.)?",
+    "Do you like helping people (teaching, healthcare, social work)?"
+]
+streams = ["Science", "Commerce", "Arts", "Vocational"]
 
-# We'll use 'grade', 'owner_ship', and 'total' as features, and assign a stream label based on grade/type
-# This is a proxy; for real quiz data, replace this logic with actual quiz answers and stream labels
-def assign_stream(row):
-    if 'IIT' in row['name'] or 'NIT' in row['name']:
-        return 'Science'
-    elif 'Technology' in row['name'] or 'Engineering' in row['name']:
-        return 'Science'
-    elif row['owner_ship'] == 'Private':
-        return 'Commerce'
-    else:
-        return 'Arts'
+# Simulate 1000 quiz responses
+np.random.seed(42)
+data = []
+for _ in range(1000):
+    answers = np.random.choice([0, 1, 2], size=len(questions))  # 0=No, 1=Sometimes, 2=Yes
+    # Assign stream based on max score logic
+    stream_scores = {
+        "Science": answers[0] + answers[4],
+        "Commerce": answers[1],
+        "Arts": answers[2] + answers[3] + answers[6],
+        "Vocational": answers[5]
+    }
+    target_stream = max(stream_scores, key=stream_scores.get)
+    data.append(list(answers) + [target_stream])
+df = pd.DataFrame(data, columns=[f"Q{i+1}" for i in range(len(questions))] + ["target_stream"])
 
-df['target_stream'] = df.apply(assign_stream, axis=1)
+X = df[[f"Q{i+1}" for i in range(len(questions))]]
+y = df["target_stream"]
 
-# Encode categorical features
-from sklearn.preprocessing import LabelEncoder
-le_grade = LabelEncoder()
-le_owner = LabelEncoder()
-df['grade_enc'] = le_grade.fit_transform(df['grade'].astype(str))
-df['owner_enc'] = le_owner.fit_transform(df['owner_ship'].astype(str))
-
-X = df[['grade_enc', 'owner_enc', 'total']]
-y = df['target_stream']
-
-model = RandomForestClassifier()
+model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X, y)
 
 os.makedirs('models', exist_ok=True)
 joblib.dump(model, 'models/quiz_stream_model.pkl')
-print('Quiz stream model trained and saved with real data!')
+print('Quiz stream model trained and saved with synthetic quiz data!')

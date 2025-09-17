@@ -21,10 +21,16 @@ df['grade_enc'] = le_grade.fit_transform(df['grade'].astype(str))
 # Ensure 'total' is numeric
 df['total'] = pd.to_numeric(df['total'], errors='coerce').fillna(0)
 
-# Use 'total' as score, 'grade_enc' as grade
-X = df[['total', 'grade_enc']]
-# For target, let's use a proxy: higher total and grade = higher chance (simulate as 70 + 0.2*total + 2*grade_enc)
-df['chance'] = 70 + 0.2 * df['total'] + 2 * df['grade_enc']
+
+# Use all available numeric features for prediction
+numeric_cols = ['total', 'grade_enc']
+for col in ['TLR', 'RPC', 'go', 'oi', 'perc']:
+	if col in df.columns:
+		df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+		numeric_cols.append(col)
+X = df[numeric_cols]
+# For target, use a more complex proxy: weighted sum of all features
+df['chance'] = 0.25 * df['total'] + 0.15 * df['grade_enc'] + 0.15 * df.get('TLR', 0) + 0.15 * df.get('RPC', 0) + 0.15 * df.get('go', 0) + 0.075 * df.get('oi', 0) + 0.075 * df.get('perc', 0)
 y = df['chance']
 
 model = LinearRegression()
